@@ -1,4 +1,4 @@
-#Company Email App
+# Company Email App
 
 ## What this project is about
 The aim was to build an application that creates email accounts for new employees.
