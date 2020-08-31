@@ -50,7 +50,6 @@ public class EmailAccount {
         return this.department;
     }
 
-    // \\s+ replaces one or more spaces with an empty string
     private void emailWithoutDepartmentName() {
          this.email = this.firstName.toLowerCase().replaceAll("\\s+", "")
                  + "." + this.lastName.toLowerCase().replaceAll("\\s+", "")
@@ -73,11 +72,6 @@ public class EmailAccount {
         return this.email;
     }
 
-    // If passwordCharacters has 71 characters, then we want a random number between 1 and 71.
-    // Math random gives a number between 0 and 1. Multiply that by the passwordCharacter length and
-    // make it an int and store it in an int named random
-    // within the scope of the password characters, we're going to take that random character and pass it
-    // into our array one at a time
     private String randomPassword(int length) {
         String passwordCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" +
                                     "abcdefghijklmnopqrstuvwxyz" +
